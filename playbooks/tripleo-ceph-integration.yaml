@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - name: Show test repository content
+      command: find src/ -name "README.md" -print -exec cat {} \;
